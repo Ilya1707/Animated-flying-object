@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #7ca0c4;
+
+}
+.square{
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 13%;
+    height: 13%;
+    background: rgb(214, 252, 4);
+    animation: move 7s infinite linear;
+}
+
+@keyframes move{
+    0% { 
+         top:6%;
+         left:6%;
+         border-radius: 20%;
+        }
+
+    25% { 
+          top: 6%;
+          left: 81%;
+          border-radius: 40%;
+         }
+
+    50%{
+       top: 81%;
+       left: 81%;
+       border-radius: 60%;
+    }   
+    75%{
+        top:81%;
+        left:6%;
+        border-radius: 80%;
+    }
+    100%{
+        top:6%;
+        left:6%;
+        transform: rotate(820deg)
+    }
+}
